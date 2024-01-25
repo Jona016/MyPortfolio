@@ -60,6 +60,7 @@
     background-color: #f9f9f9;
    }
   }
+  
   nav {
    height: 60px;
    background-color: #fef7e5;
@@ -140,4 +141,22 @@ section{
  right: 0;
  width: 75%;
  height: 87.5%;
+}
+
+.about{
+  text-align: center;
+}
+
+img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
 }

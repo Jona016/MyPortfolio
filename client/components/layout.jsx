@@ -8,12 +8,9 @@ export default function Layout() {
             <nav>
                 <div className='container'>
                     <Link to ="/"><img src = {Logo} alt = "Company Logo" className = "logo" width = "60px" height= "60px"/>  </Link>
-                
 
                 <div className='nav-elements'>
                     <ul>
-                        
-
                         <li>
                             <Link to="/">Home</Link>
                         </li>
@@ -42,7 +39,6 @@ export default function Layout() {
 
             <footer>
                 <div>
-                    <p>This is  a footer </p>
                     <p>&copy; 2024 Jonalyn. All Rights Reserved.</p>
                 </div>
             </footer>
