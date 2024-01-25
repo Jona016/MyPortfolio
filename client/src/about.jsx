@@ -6,7 +6,7 @@ export default function About() {
             <div className="about">
                 <h1>Behind the Screen</h1>
                 <br/><br/><br/>
-                <img src = {Profile} alt = "Company Logo" width = "10%" height= "10%"/> 
+                <img src = {Profile} alt = "Profile" width = "10%" height= "10%"/> 
                 
                 <h1> Jonalyn Llanes </h1> 
                 <p>
