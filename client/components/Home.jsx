@@ -7,13 +7,13 @@ export default function Home() {
             <div>
                 <h1>Hello there, </h1> 
                 <h2>Jonalyn here</h2>
-                <h2> I am an aspiring web developer </h2>
+                <h2> I am a web developer.  </h2>
             </div>
         </aside>
 
         <section>
             <div>
-                <p>Welcome! </p>
+                <h1>Welcome! </h1>
                 <h1>Elevating web experiences with creativity</h1>
             </div>
 
