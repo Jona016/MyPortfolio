@@ -10,7 +10,7 @@ export default function About() {
                 
                 <h1> Jonalyn Llanes </h1> 
                 <p>
-                    I am an aspiring web developer.
+                    I am a web developer.
                 </p>
                 <a href="../src/assets/files/resume.pdf" /*download="YourName_Resume.pdf"*/>
                     Download Resume
@@ -20,4 +20,3 @@ export default function About() {
         </>
     );
 }
-    

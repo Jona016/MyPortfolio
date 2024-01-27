@@ -19,14 +19,7 @@ export default function Education() {
                     Specialized in Web and Mobile Application <br />
                     Tarlac State University, Graduation Year: 2019
                 </h4>
-
-                <h4>
-
-                </h4>
-
-            </div>
-            
-
+            </div>          
         </>
     );
 }
