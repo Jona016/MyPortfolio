@@ -1,57 +1,71 @@
+/*
+File Name: index.css
+Student Name: Jonalyn Llanes
+Student ID: 301345658
+Date: January 28, 2023
+*/
+
+
 :root {
    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
    line-height: 1.5;
    font-weight: 400;
    color-scheme: light dark;
    color: rgba(255, 255, 255, 0.87);
-   background-color: rgb(36, 34, 34);
+   background-color: #292929;
    font-synthesis: none;
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   
-  }
-  /* a {
-   font-weight: 500;
-   color: #646cff;
-   text-decoration: inherit;
-  }
-  a:hover {
-   color: #535bf2;
-  } */
-  body {
-   margin: 0;
-   place-items: center;
-   min-width: 320px;
-   min-height: 100vh;
-  }
-  h1 {
-   font-size: 3.2em;
-   line-height: 1.1;
   }
 
   @media (prefers-color-scheme: light) {
-   :root {
-    color: #213547;
-    background-color: #ffffff;
+    :root {
+     color: #213547;
+     background-color: #ffffff;
+    }
+ 
+button {
+     background-color: #f9f9f9;
+    }
    }
-   /* a:hover {
-    color: #747bff;
-   } */
-   button {
-    background-color: #f9f9f9;
-   }
+
+body {
+   margin: 0;
+   place-items: center;
   }
   
-  nav {
+
+/******** FOOTER AND NAVBAR **********/
+
+footer {
+    background-color: #fafafa;
+    color: #131313;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }  
+  
+nav {
    height: 60px;
-   background-color: #fef7e5;
+   background-color:  #fafafa;
    position: relative;
-    font-size:x-large;
+   font-size:x-large;
+   position: sticky;
+   top: 0;
   }
   
-  .nav-elements {
-}
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
 
 .nav-elements ul {
   display: flex;
@@ -65,173 +79,126 @@
 
 .nav-elements ul a {
   font-size: 16px;
-  font-weight: 400;
-  color: #2f234f;
+  color: #131313;
   text-decoration: none;
+  font-family:  'Verdana';
 }
 
-.nav-elements ul a.active {
-  color: #574c4c;
-  font-weight: 500;
-  position: relative;
+.nav-elements ul a:hover {
+  font-size: 16px;
+  text-decoration: none;
+  font-family:  'Verdana';
+  font-weight: bolder;
 }
 
-.nav-elements ul a.active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #574c4c;
-}
 
- .container {
-   max-width: 1100px;
-   margin: 0 auto;
-   padding: 0 15px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 100%;
+/******** TEXT **********/
+
+h1 {
+  font-weight: lighter;
+  line-height: 1.5em;
+  letter-spacing: 2px;
  }
- 
- footer {
-  background-color: #333;
+
+h2 {
+   color: white;    
+ }
+
+.introduction{
+  font-size: 5em;
+  font-family:  'Monospace';
+}
+
+.home-desc{
+  font-family:  'Verdana';
+  font-weight: lighter;
+  padding-bottom: 50px;
+}
+
+.welcome-header{
+  font-size: 2em; 
+}
+
+.header{
+  font-family:  'Monospace';
+  font-size: 3em;
+  letter-spacing: 5px;
   color: white;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 30px;
+}
+
+.name{
+  font-family:  'Verdana';
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.about-desc{
+  font-family:  'Verdana';
+  font-size: 20px;
+  padding-bottom: 50px;
+  font-weight: lighter;
+}
+
+.educ-desc{
+  font-family:  'Verdana';
+  font-size: 15px;
+  padding-bottom: 50px;
+  font-weight: lighter;
+}
+
+.proj-header, .skill-header{
+  font-family:  'Verdana';
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+.proj-desc{
+  font-family:  'Verdana';
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.skill-desc{
+  font-family:  'Verdana';
+  font-size: 15px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+.contact-label {
+  margin-bottom: 10px;
+  text-align: left;
+  font-family:  'Verdana';
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.contact-info{  
+  font-family:  'Verdana';
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 50px 0px 60px 0px ;
+  border-radius: 5px;
   
 }
 
-aside{
- color: white;
- text-align: left;
- position: fixed;
- left: 0;
- width: 25%;
- height: auto;
- padding-left: 20px;
+
+/******** BUTTON **********/
+
+.btn-home, .btn-about, .btn-submit{
+  background-color: wheat;
+  color: black;
 }
 
-section{
- background-color: white;
- color: black;
- text-align: center;
- position: fixed;
- right: 0;
- width: 75%;
- height: 87.5%;
+.btn-home:hover, .btn-about:hover, .btn-submit:hover{
+background-color: #fad381;
 }
 
-.about{
-  text-align: center;
-}
-
-img {
-  max-width: 100%; /* Make the image responsive */
-  height: auto;
-  border-radius: 10px; /* Add rounded corners */
-}
-
-h2 {
-  color: white;
-}
-
-p {
-  line-height: 1.6;
-}
-
-.education {
-  text-align: center;
-}
-
-
-/* .p_img {
-  max-width: 10%;
-  max-height:15%;
-} */
-
-.text {
-  font-size: 20px;
-  padding-left: 20px;
-  padding-top: 20%;
-  float: left;
-}
-
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.project-card {
-  border: 1px solid #ddd;
-  padding: 0 20px 20px 20px;
-  border-radius: 5px;
-  width: 46%;
-  text-align: center;
-}
-
-.project-card h3 {
-  margin-bottom: 10px;
-}
-
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.skill-card {
-  border: 1px solid #ddd;
-  padding: 0 20px 20px 20px;
-  border-radius: 5px;
-  width: 20%;
-  text-align: center;
-}
-
-.skill-card h3 {
-  margin-bottom: 10px;
-}
-
-
-.contact{
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-  text-align: left;
-  border: 1px solid #ddd; 
-  padding: 20px; 
-  border-radius: 5px;
-}
-
-label {
-  margin-bottom: 10px;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin-bottom: 15px; 
-  padding: 10px; 
-  box-sizing: border-box;
-}
-
-button {
+button, input[type="submit"] {
   border: 1px solid transparent;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
   cursor: pointer;
   border-radius: 8px;
   padding: 0.6em 1.2em;
@@ -243,16 +210,110 @@ button {
   margin: 0 auto; 
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-  
-.contact-info {
-  flex: 1;
-  padding: 20px;
-  border-radius: 5px;
+
+/******** PAGE **********/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 50px 0px ;
+  text-align: center;
 }
 
-.contact-info h3 {
-  margin-bottom: 10px;
+.education, .about, .contact, .services {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 80px 0px ;
+  text-align: center;
+}
+
+.proj-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0px 0px 0px 0px ;
+}
+
+.skill-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0px 0px 80px 0px ;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  border-radius: 5px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 15px; 
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+
+/******** IMAGE **********/
+
+.about-img{
+  width: 10%;
+  height: 10%;
+  border-radius: 10%;
+  max-width: 100%;
+}
+
+.educ-img {
+  max-width: 100%;
+  border-radius: 10px;
+  width: 30%;
+  height: 10%;
+}
+
+.educ-card{
+  padding: 0 20px 50px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.proj-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skill-img {
+  max-width: 80%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.proj-card{
+  border: 1px solid #ddd;
+  padding: 0 20px 20px 20px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.skill-card {
+  border: 1px solid #ddd;
+  padding: 0 10px 20px 10px;
+  border-radius: 5px;
+  width:15%;
+  text-align: center;
 }
